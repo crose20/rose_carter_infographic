@@ -1,0 +1,59 @@
+/* The elements to apply the animation to */
+
+/* PLANET ARROWS - SUN, MARS, URANUS, EARTH, SATURN, NEPTUNE (required normal direction) */
+#sun-arrow, #mars-arrow, #uranus-arrow, #earth-arrow, #saturn-arrow, #neptune-arrow   {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 10;
+    animation: dash 60s linear normal infinite;
+    /* line style, duration, timing, direction, play state */
+    }
+
+/* PLANET ARROWS - MERCURY, VENUS & JUPITER (required reverse direction) */
+#mercury-arrow, #venus-arrow, #jupiter-arrow  {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 10;
+    animation: dash 60s linear reverse infinite;
+    /* line style, duration, timing, direction, play state */
+  }
+
+/* The animation code for all planets arrows*/
+@keyframes dash {
+    from {stroke-dashoffset: 1000;}
+    to {stroke-dashoffset: 10;}
+  }
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible !important;
+}
+
+body {
+    background-color: #1E1E1E;
+}
+
+#space-station {
+    width: 20%;
+    margin: 0 auto;
+}
+
+#space-station-info {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.heading {
+    color: #FEC97C;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.copy {
+    color: #E2E2E2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
